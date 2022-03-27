@@ -1,2 +1,2 @@
-# bits-smartlearn-student-reg
-A microservice for student registration
+# bits-smartlearn-students
+A microservice for students
