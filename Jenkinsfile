@@ -1,8 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'smart-learn-students-v1' 
-            args '-p 3000:3000' 
+            image 'node:13-alpine'
         }
     }
     stages {
