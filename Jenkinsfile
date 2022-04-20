@@ -6,9 +6,10 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Build Docker image') { 
             steps {
                 sh 'npm install' 
+				sh 'docker build -t smart-learn-students-v1 .'
             }
         }
     }
