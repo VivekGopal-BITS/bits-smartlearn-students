@@ -8,8 +8,11 @@ pipeline {
     stages {
         stage('Build Docker image') { 
             steps {
-                sh 'npm install' 
+                sh 'npm install'
+				echo "Building Docker image"
 				sh 'docker build -t smart-learn-students-v1 .'
+				echo "Listing docker images.."
+				sh 'docker images'
             }
         }
     }
